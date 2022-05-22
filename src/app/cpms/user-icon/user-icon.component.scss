@@ -1,0 +1,36 @@
+.user-icon {
+    .icon-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #FFF;
+        border: none;
+
+        >* {
+            font-size: 30px;
+            color: #717171;
+        }
+
+        .icon-button__badge {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #ff385c;
+            color: #FFF;
+            font-size: 0.875px;
+            top: -5px;
+            right: -5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 00.875rem;
+            text-decoration: none;
+
+        }
+    }
+}

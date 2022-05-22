@@ -1,0 +1,9 @@
+:host {
+    flex-grow: 1;
+
+    .hotel-app {
+        flex-grow: 1;
+        height: 100%;
+        background-color: lightgreen;
+    }
+}

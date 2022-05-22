@@ -1,0 +1,43 @@
+.app-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 450;
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+
+    .logo {
+        height: 48px;
+        font-size: 2rem;
+        color: #ff385c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .config {
+        display: flex;
+        gap: 15px;
+
+        >* {
+            height: 48px;
+            border-radius: 24px;
+            padding: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.2s;
+            cursor: pointer;
+
+            .material-icons {
+                font-size: 1.125rem;
+            }
+
+            &:hover:not(.user-config-container) {
+                background-color: rgba(245, 245, 245);
+            }
+
+        }
+    }
+}
