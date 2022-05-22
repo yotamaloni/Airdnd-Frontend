@@ -12,6 +12,8 @@ import { UserConfigComponent } from './cpms/user-config/user-config.component';
 import { UserIconComponent } from './cpms/user-icon/user-icon.component';
 import { HotelsOptionsListComponent } from './cpms/hotels-options-list/hotels-options-list.component';
 import { HotelOptionPreviewComponent } from './cpms/hotel-option-preview/hotel-option-preview.component';
+import { HotelListComponent } from './cpms/hotel-list/hotel-list.component';
+import { HotelPreviewComponent } from './cpms/hotel-preview/hotel-preview.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { HotelOptionPreviewComponent } from './cpms/hotel-option-preview/hotel-o
     UserIconComponent,
     HotelsOptionsListComponent,
     HotelOptionPreviewComponent,
+    HotelListComponent,
+    HotelPreviewComponent,
   ],
   imports: [
     BrowserModule,

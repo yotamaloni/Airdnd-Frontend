@@ -7,11 +7,11 @@ export interface Hotel {
     city: String
     pos: {
         lat: Number,
-        lng: Number
+        lan: Number
     }
     priceUsDollar: Number
-    Rank: Number
-    placeType: String,
+    rank: Number | String
+    placeType: String
     propertyType: String
     reservations: Reservation[]
     labels: String[]
@@ -29,5 +29,6 @@ export interface Hotel {
         theSpace: String
         otherThingToNote: String
     }
+    images: String[]
 }
 
