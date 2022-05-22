@@ -3,16 +3,73 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    color: #222222;
+    font-size: 1rem;
 
     .img-container {
         height: 100%;
         width: 100%;
+        position: relative;
+
+        .fav-container {
+            z-index: 5;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            fill: rgba(187, 134, 134, 0.5);
+            color: #FFFFFF;
+            fill: rgba(0, 0, 0, 0.5)
+        }
 
         img {
             height: 100%;
             width: 100%;
             flex-grow: 1;
             border-radius: 13px;
+        }
+    }
+
+    .info {
+        .hotel-location-rank {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+
+            .location {
+                font-weight: 550;
+            }
+
+            .rank {
+                font-weight: 200;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+
+                .material-icons {
+                    font-size: 0.875rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+        }
+
+        .hotel-name-sale {
+            margin-bottom: 10px;
+            color: #727272;
+            font-weight: 400;
+        }
+
+        .hotel-price {
+            font-weight: 550;
+
+            span.night {
+                margin-inline-start: 5px;
+                font-weight: 400;
+            }
         }
     }
 

@@ -1,16 +1,30 @@
 <section class="hotel-preview">
     <div class="img-container">
         <img src={{hotel.images[0]}}>
+        <div class="fav-container">
+            <i class="material-icons">favorite_outline</i>
+        </div>
     </div>
     <div class="info">
-        <div>
-            {{hotel.city}},{{hotel.country}}
+        <div class="hotel-location-rank">
+            <div class="location">
+                {{hotel.city}}, {{hotel.country}}
+            </div>
+
+            <div class="rank">
+                {{hotel.rank}} <span><i class="material-icons">star</i></span>
+            </div>
         </div>
-        <div>
-            {{hotel.name}}
+        <div class="hotel-name-sale">
+            <div class="name">
+                {{hotel.name}}
+            </div>
+            <div class="sale">
+                {{hotel.saleDates.checkIn| date: 'MMM d'}} - {{hotel.saleDates.checkOut| date: 'd'}}
+            </div>
         </div>
-        <div>
-            {{hotel.priceUsDollar}}
+        <div class="hotel-price">
+            {{'$'+hotel.priceUsDollar}}<span class="night">night</span>
         </div>
         <div>
         </div>

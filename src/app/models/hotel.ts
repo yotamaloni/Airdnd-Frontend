@@ -14,6 +14,10 @@ export interface Hotel {
     placeType: String
     propertyType: String
     reservations: Reservation[]
+    saleDates: {
+        checkIn: Date
+        checkOut: Date
+    }
     labels: String[]
     facilities: {
         bathroom: Number

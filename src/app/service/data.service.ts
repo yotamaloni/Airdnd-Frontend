@@ -106,6 +106,10 @@ export class DataService {
           },
         },
       ],
+      saleDates: {
+        checkIn: new Date(23423423),
+        checkOut: new Date(23423656565),
+      },
       labels: [
         "design",
         "arctic",
@@ -186,6 +190,10 @@ export class DataService {
           },
         },
       ],
+      saleDates: {
+        checkIn: new Date(23423423),
+        checkOut: new Date(23423656565),
+      },
       labels: [
         "design",
         "arctic",
@@ -266,6 +274,10 @@ export class DataService {
           },
         },
       ],
+      saleDates: {
+        checkIn: new Date(23423423),
+        checkOut: new Date(23423656565),
+      },
       labels: [
         "design",
         "arctic",
@@ -346,6 +358,10 @@ export class DataService {
           },
         },
       ],
+      saleDates: {
+        checkIn: new Date(23423423),
+        checkOut: new Date(23423656565),
+      },
       labels: [
         "design",
         "arctic",
@@ -426,6 +442,10 @@ export class DataService {
           },
         },
       ],
+      saleDates: {
+        checkIn: new Date(23423423),
+        checkOut: new Date(23423656565),
+      },
       labels: [
         "design",
         "arctic",
@@ -506,6 +526,10 @@ export class DataService {
           },
         },
       ],
+      saleDates: {
+        checkIn: new Date(23423423),
+        checkOut: new Date(23423656565),
+      },
       labels: [
         "design",
         "arctic",
@@ -586,6 +610,10 @@ export class DataService {
           },
         },
       ],
+      saleDates: {
+        checkIn: new Date(23423423),
+        checkOut: new Date(23423656565),
+      },
       labels: [
         "design",
         "arctic",
