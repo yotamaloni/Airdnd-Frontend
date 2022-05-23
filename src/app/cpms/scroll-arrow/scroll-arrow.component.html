@@ -1,0 +1,8 @@
+<section class="scroll-arrow" [ngClass]="direction" >
+    <button (click)="onClickOnArrow(direction)" class="clean-btn arrow-btn">
+        <i class="material-icons">{{'keyboard_arrow_'+direction}}</i>
+    </button>
+</section>
+
+
+<!-- [ngClass]="{'disable':isDisable}" -->

@@ -1,10 +1,4 @@
 :host {
-    flex-grow: 1;
-    margin-top: 20px;
-
-    .hotel-app {
-        flex-grow: 1;
-        height: 100%;
-        width: 100vw;
-    }
+    display: flex;
+    flex-direction: column;
 }

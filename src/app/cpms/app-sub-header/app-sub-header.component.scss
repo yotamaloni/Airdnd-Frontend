@@ -1,4 +1,43 @@
-.app-sub-header {
-    display: flex;
-    align-items: center;
+:host {
+    .app-sub-header {
+        display: flex;
+        align-items: center;
+        height: 78px;
+        padding: 0 80px;
+        position: fixed;
+        top: 80px;
+        z-index: 5;
+        background-color: #FFF;
+        ;
+
+        &.scrolled {
+            box-shadow: 1px 2px 0px 0px #f0f0f0;
+        }
+
+        gap: 20px;
+        justify-content: space-between;
+        width: 100vw;
+
+        .filter-btn {
+            height: 48px;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(210, 205, 205);
+            border-radius: 10px;
+            font-size: 0.75rem;
+            padding: 0 8px;
+            color: #222222;
+
+            .material-icons {
+                font-size: 0.875rem;
+            }
+
+            button {
+                padding: 0 5px;
+                height: 100%;
+                font-weight: 550;
+            }
+        }
+
+    }
 }

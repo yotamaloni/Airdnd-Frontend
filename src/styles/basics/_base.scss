@@ -7,8 +7,7 @@
 }
 
 ::selection {
-  background-color: lighten($clr4, 20%);
-  color: $clr2;
+  background-color: lighten($clr3, 20%);
 }
 
 html {
@@ -24,8 +23,15 @@ body {
   font-size: 0.875rem;
   font-weight: 400;
 }
-s
-img {
+
+
+.clean-btn {
+  border: none;
+  background: none;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+s img {
   width: 100%;
 }
 
@@ -44,7 +50,7 @@ p {
   right: 5px;
 }
 
-.logo{
+.logo {
   font-family: antonio;
 }
 

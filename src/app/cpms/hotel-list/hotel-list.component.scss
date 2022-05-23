@@ -1,8 +1,21 @@
-.hotel-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+:host {
 
-    >* {
-        margin: 20px 10px 20px 10px
+    width: 100vw;
+    overflow-x: hidden;
+
+    .hotel-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+        padding: 0 80px;
+        flex-grow: 1;
+        width: 100vw;
+        gap: 20px;
+        margin-top: 166px;
+        overflow-x: hidden;
+
+        >* {
+            margin-bottom: 20px;
+        }
+
     }
 }

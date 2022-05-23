@@ -12,7 +12,6 @@ export class HotelAppComponent implements OnInit {
 
   hotels: Hotel[]
   hotels$: Observable<Hotel[]>
-
   constructor(private HotelService: HotelService) { }
 
   ngOnInit(): void {

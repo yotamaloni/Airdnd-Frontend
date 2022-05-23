@@ -6,6 +6,16 @@
     font-size: 0.875rem;
     font-weight: 450;
     border-bottom: 0.5px solid rgb(231, 228, 228);
+    height: 80px;
+    padding: 0 80px;
+    background-color: #FFF;
+
+    &.fixed{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 5;
+    }
 
     .logo {
         height: 48px;

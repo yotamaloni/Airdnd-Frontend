@@ -2,18 +2,4 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-
-    .app-header {
-        padding: 0 $layoutPaddingMax;
-        height: 80px;
-    }
-
-    .app-sub-header {
-        padding: 0 $layoutPaddingMax;
-        height: 78px;
-    }
-
-    .hotel-app {
-        padding: 0 $layoutPaddingMax;
-    }
 }

@@ -1,4 +1,20 @@
-.hotels-options-list {
-    display: flex;
-    gap: 20px;
+:host {
+    width: calc(100% - 99.3px);
+
+    .hotels-options-list {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+        .custom-slider-main {
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            scroll-behavior: smooth;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 30px;
+        }
+    }
 }

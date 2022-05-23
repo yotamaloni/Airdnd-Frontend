@@ -1,3 +1,7 @@
-<section class="app-sub-header">
+<section class="app-sub-header scrolled" [ngClass]="{'scrolled': isWindowScrolled}" >
     <hotels-options-list></hotels-options-list>
+    <div class="filter-btn">
+        <i class="material-icons">tune</i>
+        <button class="clean-btn">Filters</button>
+    </div>
 </section>

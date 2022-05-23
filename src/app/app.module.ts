@@ -14,6 +14,8 @@ import { HotelsOptionsListComponent } from './cpms/hotels-options-list/hotels-op
 import { HotelOptionPreviewComponent } from './cpms/hotel-option-preview/hotel-option-preview.component';
 import { HotelListComponent } from './cpms/hotel-list/hotel-list.component';
 import { HotelPreviewComponent } from './cpms/hotel-preview/hotel-preview.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ScrollArrowComponent } from './cpms/scroll-arrow/scroll-arrow.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { HotelPreviewComponent } from './cpms/hotel-preview/hotel-preview.compon
     HotelOptionPreviewComponent,
     HotelListComponent,
     HotelPreviewComponent,
+    HomePageComponent,
+    ScrollArrowComponent,
   ],
   imports: [
     BrowserModule,
