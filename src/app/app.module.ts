@@ -16,6 +16,9 @@ import { HotelListComponent } from './cpms/hotel-list/hotel-list.component';
 import { HotelPreviewComponent } from './cpms/hotel-preview/hotel-preview.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ScrollArrowComponent } from './cpms/scroll-arrow/scroll-arrow.component';
+import { HotelDetailsComponent } from './pages/hotel-details/hotel-details.component';
+import { HotelDetailsHeaderComponent } from './cpms/hotel-details-header/hotel-details-header.component';
+import { HotelImgPreComponent } from './cpms/hotel-img-pre/hotel-img-pre.component';
 
 
 @NgModule({
@@ -33,6 +36,9 @@ import { ScrollArrowComponent } from './cpms/scroll-arrow/scroll-arrow.component
     HotelPreviewComponent,
     HomePageComponent,
     ScrollArrowComponent,
+    HotelDetailsComponent,
+    HotelDetailsHeaderComponent,
+    HotelImgPreComponent,
   ],
   imports: [
     BrowserModule,

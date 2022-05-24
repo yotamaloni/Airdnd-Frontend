@@ -1,10 +1,12 @@
 import { Reservation } from "./reservation"
+import { User } from "./user"
 
 export interface Hotel {
     _id: String
     name: String
     country: String,
     city: String
+    host: User
     pos: {
         lat: Number,
         lan: Number

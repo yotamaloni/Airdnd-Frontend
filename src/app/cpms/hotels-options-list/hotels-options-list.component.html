@@ -1,9 +1,11 @@
 <section class="hotels-options-list">
-    <scroll-arrow (onClickArrow)="onScrollTo($event)" direction='left' [isDisable]="isDisableLeftArrow"></scroll-arrow>
+    <scroll-arrow *ngIf="!isDisableLeftArrow" (onClickArrow)="onScrollTo($event)" direction='left'
+        [isDisable]="isDisableLeftArrow"></scroll-arrow>
     <div #widgetsContent class="custom-slider-main flex default-gap" (scroll)="onScroll()">
         <hotel-option-preview *ngFor="let hotelOption of hotelsOptions" [hotelOption]="hotelOption">
         </hotel-option-preview>
     </div>
-    <scroll-arrow (onClickArrow)="onScrollTo($event)" direction='right' [isDisable]="isDisableRightArrow">
+    <scroll-arrow *ngIf="!isDisableRightArrow" (onClickArrow)="onScrollTo($event)" direction='right'
+        [isDisable]="isDisableRightArrow">
     </scroll-arrow>
 </section>

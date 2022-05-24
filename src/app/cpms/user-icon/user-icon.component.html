@@ -1,6 +1,8 @@
 <section class="user-icon">
-    <button type="button" class="icon-button">
-        <i class="material-icons">account_circle</i>
+    <button s type="button" class="icon-button">
+        <i *ngIf="!user.imgSrc" class="material-icons">account_circle</i>
+        <div *ngIf="user.imgSrc" class="img-background" [ngStyle]="{'background-image': 'url(' +user.imgSrc+ ')'}">
+        </div>
         <i class="icon-button__badge">2</i>
     </button>
 </section>

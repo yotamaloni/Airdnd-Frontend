@@ -1,17 +1,19 @@
 <section class="search-hotel">
     <div class="minimize-search">
-        <div class="anywhere">
+        <div *ngIf="!isInHotelApp" class="start-your-search">
+            Start your search
+        </div>
+        <div *ngIf="isInHotelApp" class="anywhere">
             Anywhere
         </div>
-        <div class="anyweek">
+        <div *ngIf="isInHotelApp" class="anyweek">
             Any week
         </div>
-        <div class="add-guests">
+        <div *ngIf="isInHotelApp" class="add-guests">
             Add guests
         </div>
         <div class="search">
             <i class="material-icons">search</i>
         </div>
     </div>
-
 </section>

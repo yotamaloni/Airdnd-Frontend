@@ -20,5 +20,11 @@ export class HotelService {
 
   public query(): void {
     this._hotels$.next(this._hotelsDB)
+    this.StorageService.save(this.KEY, this._hotelsDB)
   }
+  public getById(hotelId: string): Observable<Hotel> {
+    const hotel = this._hotelsDB.find(currHotel => currHotel._id === hotelId)
+    return of({ ...hotel })
+  }
+
 }

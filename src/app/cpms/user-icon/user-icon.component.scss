@@ -7,12 +7,24 @@
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: #FFF;
+        background: none;
         border: none;
+        padding: 0;
+        .img-background {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            font-size: 30px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
         >* {
-            font-size: 30px;
-            color: #717171;
+            // color: #717171;
         }
 
         .icon-button__badge {

@@ -4,7 +4,7 @@ export interface Reservation {
     checkIn: Date,
     checkOut: Date,
     guest: {
-        user: User
+        user: any
         adults: Number
         children: Number
         infant: Number

@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HotelOption } from '../models/hotel-option';
 import { Hotel } from '../models/hotel';
+import { UtilsService } from './utils.service';
+import { User } from '../models/user';
 
 @Injectable({
   providedIn: 'root'
@@ -74,12 +76,23 @@ export class DataService {
     },
   ]
 
+
+
+  constructor(public UtilsService: UtilsService) { }
   hotels: Hotel[] = [
     {
-      _id: 'sdf4esdfdssdfa',
+      _id: this.UtilsService.makeId(),
       name: "Jhon's",
       country: "South Africa",
       city: "Johannesburg",
+      host: {
+        firstName: 'yotam',
+        lastName: 'aloni',
+        _id: this.UtilsService.makeId(),
+        country: 'israel',
+        imgSrc: '',
+        initials: 'YA'
+      },
       pos: {
         lat: 555,
         lan: 444,
@@ -95,7 +108,7 @@ export class DataService {
           checkOut: new Date(),
           guest: {
             user: {
-              name: "david",
+              first: "david",
               _id: "df3dscsdc",
               country: "israel",
             },
@@ -156,14 +169,28 @@ export class DataService {
         otherThingToNote: "dsfsdfsd",
       },
       images: [
-        'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236160/Airdnd/spjqkh4mlqs3iosoih8a.jpg'
+        'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236160/Airdnd/spjqkh4mlqs3iosoih8a.jpg',
+        'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236171/Airdnd/qwwt4c1wfnldwlhp645e.jpg',
+        'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236171/Airdnd/qwwt4c1wfnldwlhp645e.jpg',
+        'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236171/Airdnd/qwwt4c1wfnldwlhp645e.jpg',
+        'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236171/Airdnd/qwwt4c1wfnldwlhp645e.jpg',
+        'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236171/Airdnd/qwwt4c1wfnldwlhp645e.jpg',
+        'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236171/Airdnd/qwwt4c1wfnldwlhp645e.jpg',
       ]
     },
     {
-      _id: 'sdfsdf4esdf',
+      _id: this.UtilsService.makeId(),
       name: "Karol's",
       country: "New YorK",
       city: "New York City",
+      host: {
+        firstName: 'david',
+        lastName: 'jane',
+        _id: this.UtilsService.makeId(),
+        country: 'united states',
+        imgSrc: '',
+        initials: 'DJ'
+      },
       pos: {
         lat: 555,
         lan: 444,
@@ -244,10 +271,18 @@ export class DataService {
       ]
     },
     {
-      _id: 'sdsdsdff4esdf',
+      _id: this.UtilsService.makeId(),
       name: "Kiki's",
       country: "Argentina",
       city: "Buenos Aires",
+      host: {
+        firstName: 'alex',
+        lastName: 'lord',
+        _id: this.UtilsService.makeId(),
+        country: 'russia',
+        imgSrc: '',
+        initials: 'AL'
+      },
       pos: {
         lat: 555,
         lan: 444,
@@ -328,10 +363,18 @@ export class DataService {
       ]
     },
     {
-      _id: 'sdf4dsdesdf',
+      _id: this.UtilsService.makeId(),
       name: "Josh Wonderful Garden",
       country: "Croatia",
       city: "Zagreb",
+      host: {
+        firstName: 'larra',
+        lastName: 'sarah',
+        _id: this.UtilsService.makeId(),
+        country: 'england',
+        imgSrc: '',
+        initials: 'LS'
+      },
       pos: {
         lat: 555,
         lan: 444,
@@ -412,10 +455,18 @@ export class DataService {
       ]
     },
     {
-      _id: 'sdf4dddesdf',
+      _id: this.UtilsService.makeId(),
       name: "Jin's Place",
       country: "Great Britain",
       city: "London",
+      host: {
+        firstName: 'sarah',
+        lastName: 'david',
+        _id: this.UtilsService.makeId(),
+        country: 'south africa',
+        imgSrc: '',
+        initials: 'SD'
+      },
       pos: {
         lat: 555,
         lan: 444,
@@ -496,10 +547,18 @@ export class DataService {
       ]
     },
     {
-      _id: 'sdf4esdf',
+      _id: this.UtilsService.makeId(),
       name: "David",
       country: "Brazil",
       city: "Brasilia",
+      host: {
+        firstName: 'ali',
+        lastName: 'zik',
+        _id: this.UtilsService.makeId(),
+        country: 'egypt',
+        imgSrc: '',
+        initials: 'AZ'
+      },
       pos: {
         lat: 555,
         lan: 444,
@@ -580,10 +639,18 @@ export class DataService {
       ]
     },
     {
-      _id: 'sasdfasd4esdf',
+      _id: this.UtilsService.makeId(),
       name: "The Ranch",
       country: "Texas",
       city: "Austin",
+      host: {
+        firstName: 'gabi',
+        lastName: 'dabi',
+        _id: this.UtilsService.makeId(),
+        country: 'slovenia',
+        imgSrc: '',
+        initials: 'GD'
+      },
       pos: {
         lat: 555,
         lan: 444,
@@ -664,10 +731,18 @@ export class DataService {
       ]
     },
     {
-      _id: 'sasdf4esdf',
+      _id: this.UtilsService.makeId(),
       name: "Yotam's Place",
       country: "Israel",
       city: "Jerusalem",
+      host: {
+        firstName: 'avi',
+        lastName: 'bvi',
+        _id: this.UtilsService.makeId(),
+        country: 'israel',
+        imgSrc: '',
+        initials: 'AB'
+      },
       pos: {
         lat: 555,
         lan: 444,
@@ -748,7 +823,4 @@ export class DataService {
       ]
     }
   ];
-
-  constructor() { }
-
 }

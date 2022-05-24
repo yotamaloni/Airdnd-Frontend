@@ -15,6 +15,7 @@ html {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
+
 body {
   height: 100vh;
   margin: 0;
@@ -22,6 +23,7 @@ body {
   color: $clr2;
   font-size: 0.875rem;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 
@@ -29,6 +31,11 @@ body {
   border: none;
   background: none;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.clean-link {
+  text-decoration: none;
 }
 
 s img {

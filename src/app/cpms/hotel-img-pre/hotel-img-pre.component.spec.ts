@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserCongigComponent } from './user-congig.component';
+import { HotelImgPreComponent } from './hotel-img-pre.component';
 
-describe('UserCongigComponent', () => {
-  let component: UserCongigComponent;
-  let fixture: ComponentFixture<UserCongigComponent>;
+describe('HotelImgPreComponent', () => {
+  let component: HotelImgPreComponent;
+  let fixture: ComponentFixture<HotelImgPreComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserCongigComponent ]
+      declarations: [ HotelImgPreComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UserCongigComponent);
+    fixture = TestBed.createComponent(HotelImgPreComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

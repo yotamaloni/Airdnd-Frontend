@@ -3,7 +3,7 @@
         AIRDND
     </div>
     <div class="search">
-        <search-hotel></search-hotel>
+        <search-hotel [isInHotelApp]="isInHotelApp"></search-hotel>
     </div>
     <div class="config">
         <div>Become a Host</div>
@@ -11,9 +11,8 @@
             <i class="material-icons">language</i>
         </div>
         <div class="user-config-container">
-            <user-config></user-config>
+            <user-config [user]="user"></user-config>
         </div>
     </div>
-
 
 </section>

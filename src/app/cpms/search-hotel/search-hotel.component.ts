@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'search-hotel',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchHotelComponent implements OnInit {
 
+  @Input() isInHotelApp: boolean
   constructor() { }
 
   ngOnInit(): void {

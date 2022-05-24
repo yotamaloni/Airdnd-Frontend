@@ -1,0 +1,20 @@
+<section *ngIf="hotel" class="hotel-details-header">
+    <div class="hotel-name">{{hotel.name}}</div>
+    <div class="hotel-general-info-actions">
+        <div class="hotel-general-info">
+            <div class="rank">
+                <i class="material-icons">star </i><span>{{hotel.rank}}</span><span>&#183;</span> <span
+                    class="reviews">61 reviews</span>
+            </div>
+            <span>&#183;</span>
+            <div class="super-host">superhost</div>
+            <span>&#183;</span>
+
+            <div class="location">{{hotel.city}}, {{hotel.country}}</div>
+        </div>
+        <div class="actions">
+            <div> <i class="material-icons">present_to_all</i> <span>Share</span> </div>
+            <div><i class="material-icons">favorite_outline</i><span>Save</span></div>
+        </div>
+    </div>
+</section>
