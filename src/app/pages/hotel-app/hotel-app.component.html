@@ -1,5 +1,5 @@
 <section class="hotel-app">
     <app-header [isInHotelApp]="true"></app-header>
-    <app-sub-header ></app-sub-header>
-    <hotel-list [hotels]="hotels$ | async"></hotel-list>
+    <app-sub-header></app-sub-header>
+    <hotel-list [isInSearch]="isInSearch" [hotels]="hotels$ | async"></hotel-list>
 </section>

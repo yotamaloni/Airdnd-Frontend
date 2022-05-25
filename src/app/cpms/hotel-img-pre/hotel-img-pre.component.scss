@@ -11,25 +11,18 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                border-radius: 10px;
             }
 
         }
 
-        .main-img {
-            >* {
-                background-color: yellow;
-            }
-        }
+        .main-img {}
 
         .secondary-imgs {
             display: grid;
             gap: 8px;
             grid-template-columns: repeat(2, calc(50% - 8px));
             grid-template-rows: repeat(2, calc(50% - 4px));
-
-            >* {
-                background-color: red;
-            }
         }
     }
 }

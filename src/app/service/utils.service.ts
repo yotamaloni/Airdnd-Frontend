@@ -24,4 +24,22 @@ export class UtilsService {
 
     return initials;
   }
+
+  getRandomImg(): String {
+    return this.IMAGES[Math.floor(Math.random() * this.IMAGES.length)]
+  }
+
+  IMAGES = [
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236174/Airdnd/jsl7ipwu43abrulezs7y.jpg',
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236171/Airdnd/qwwt4c1wfnldwlhp645e.jpg',
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236170/Airdnd/lqcuptrkmrjnvwdp7lkx.jpg',
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236165/Airdnd/kwgmq1s5dimz5ngb83ja.jpg',
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236161/Airdnd/wrr7mr61fyzogfopuebk.jpg',
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236160/Airdnd/spjqkh4mlqs3iosoih8a.jpg',
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236158/Airdnd/xc4b7mfkw4ggzeavpcss.jpg',
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236157/Airdnd/ddwnuxkwqscazntgpzox.jpg',
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236147/Airdnd/uhfmmjmtog4uq6apyjwj.jpg',
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236140/Airdnd/kaoqioc1qjgnswyjkusb.jpg',
+    'https://res.cloudinary.com/dnft2vfvz/image/upload/v1653236129/Airdnd/ckzwnwzdqyjsrwlndwvq.jpg',
+  ]
 }

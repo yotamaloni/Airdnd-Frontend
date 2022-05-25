@@ -1,5 +1,5 @@
 <section class="hotel-list">
 
-    <hotel-preview *ngFor="let hotel of hotels" [hotel]="hotel"></hotel-preview>
-   
+    <hotel-preview [isInSearch]="isInSearch" *ngFor="let hotel of hotels" [hotel]="hotel"></hotel-preview>
+
 </section>

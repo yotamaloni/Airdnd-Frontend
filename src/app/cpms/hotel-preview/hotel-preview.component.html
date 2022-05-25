@@ -8,7 +8,7 @@
     <div class="info">
         <div class="hotel-location-rank">
             <div class="location">
-                {{hotel.city}}, {{hotel.country}}
+                {{hotelInfo.header}}
             </div>
 
             <div class="rank">
@@ -17,14 +17,14 @@
         </div>
         <div class="hotel-name-sale">
             <div class="name">
-                {{hotel.name}}
+                {{hotelInfo.mainFirst}}
             </div>
-            <div class="sale">
-                {{hotel.saleDates.checkIn| date: 'MMM d'}} - {{hotel.saleDates.checkOut| date: 'd'}}
+            <div *ngIf="!isInSearch" class="sale">
+                {{hotelInfo.mainSecond.checkIntDate| date: 'MMM d'}} - {{hotelInfo.mainSecond.checkOutDate| date: 'd'}}
             </div>
         </div>
         <div class="hotel-price">
-            {{'$'+hotel.priceUsDollar}}<span class="night">night</span>
+            {{'$'+hotelInfo.price}}<span class="night">night</span>
         </div>
         <div>
         </div>

@@ -8,6 +8,8 @@ import { Hotel } from 'src/app/models/hotel';
 })
 export class HotelListComponent implements OnInit {
   @Input() hotels: Hotel[]
+  @Input() isInSearch: boolean
+
   constructor() { }
 
   ngOnInit(): void {

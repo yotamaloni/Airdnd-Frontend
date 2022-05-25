@@ -16,10 +16,12 @@
             position: absolute;
             top: 5px;
             right: 5px;
-            fill: rgba(187, 134, 134, 0.5);
-            color: #FFFFFF;
-            fill: rgba(0, 0, 0, 0.5)
+
+            .material-icons {
+                color: #FFFFFF;
+            }
         }
+
 
         img {
             height: 100%;
