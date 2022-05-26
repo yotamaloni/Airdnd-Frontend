@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/service/user.service';
 import { Observable, Subscription } from 'rxjs';
@@ -14,6 +14,7 @@ export class AppHeaderComponent implements OnInit, OnDestroy {
   user: User
   user$: Observable<User>
   subscription: Subscription
+  expandHeader: boolean = false
   constructor(private UserService: UserService) { }
 
   ngOnInit(): void {
@@ -25,9 +26,13 @@ export class AppHeaderComponent implements OnInit, OnDestroy {
   changeUser = () => {
     this.UserService.changeCurrUser()
   }
-  
+
   ngOnDestroy(): void {
     this.subscription.unsubscribe()
+  }
+
+  onExpandHeader = (): void => {
+    this.expandHeader = true
   }
 
 }

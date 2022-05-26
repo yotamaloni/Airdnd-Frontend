@@ -1,52 +1,75 @@
 .app-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     font-size: 0.875rem;
     font-weight: 450;
     border-bottom: 0.5px solid rgb(231, 228, 228);
     height: 80px;
     padding: 0 80px;
     background-color: #FFF;
+    z-index: 6;
+    transition: height 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    &.fixed{
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 5;
-    }
-
-    .logo {
-        height: 48px;
-        font-size: 2rem;
-        color: #ff385c;
+    .main-header-container {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-    }
+        transition: height 0.3s;
 
-    .config {
-        display: flex;
-        gap: 15px;
-
-        >* {
+        .logo {
             height: 48px;
-            border-radius: 24px;
+            font-size: 2rem;
+            color: #ff385c;
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: background-color 0.2s;
-            cursor: pointer;
-
-            .material-icons {
-                font-size: 1.125rem;
-            }
-
-            &:hover:not(.user-config-container) {
-                background-color: rgba(245, 245, 245);
-            }
-
         }
+
+        .config {
+            display: flex;
+            gap: 15px;
+
+            >* {
+                height: 48px;
+                border-radius: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: background-color 0.2s;
+                cursor: pointer;
+
+                .material-icons {
+                    font-size: 1.125rem;
+                }
+
+                &:hover:not(.user-config-container) {
+                    background-color: rgba(245, 245, 245);
+                }
+
+            }
+        }
+
+
+    }
+
+    &.expanded {
+        height: 160px;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+    }
+
+
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    .search-hotel-expended-container {
+        height: 64px;
     }
 }

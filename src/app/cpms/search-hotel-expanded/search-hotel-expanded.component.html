@@ -1,0 +1,29 @@
+<section class="search-hotel-expanded">
+    <div (click)="setModal('location')" class="location" [ngClass]="{'active': activeDivName === 'where'}">
+        <div class="title">Where</div>
+        <div class="info">Search destination</div>
+        <div class="modal-container location" *ngIf="modal.type==='location'">
+            <dynamic-modal [modal]="modal"></dynamic-modal>
+        </div>
+    </div>
+    <div (click)="setModal('date')" class="date" [ngClass]="{'active': activeDivName === 'when'}">
+        <div class="title">When</div>
+        <div class="info">Any Week</div>
+        <div class="modal-container date" *ngIf="modal.type==='date'">
+            <dynamic-modal [modal]="modal"></dynamic-modal>
+        </div>
+    </div>
+    <div (click)="setModal('guest')" class="guest" [ngClass]="{'active': activeDivName === 'where'}">
+        <div class="title">Who</div>
+        <div class="info">Add Guest</div>
+        <div class="search">
+            <i class="material-icons">search</i>
+            Search
+        </div>
+        <div class="modal-container guest" *ngIf="modal.type==='guest'">
+            <dynamic-modal [modal]="modal"></dynamic-modal>
+        </div>
+    </div>
+
+
+</section>

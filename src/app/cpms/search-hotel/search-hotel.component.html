@@ -1,5 +1,5 @@
 <section class="search-hotel">
-    <div class="minimize-search">
+    <div (click)="expandSearch()" *ngIf="!isExpanded" class="minimize-search">
         <div *ngIf="!isInHotelApp" class="start-your-search">
             Start your search
         </div>

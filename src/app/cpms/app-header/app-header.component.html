@@ -1,18 +1,24 @@
-<section class="app-header" [ngClass]="{'fixed': isInHotelApp === true}">
-    <a class="logo clean-link" routerLink="">
-        AIRDND
-    </a>
-    <div class="search">
-        <search-hotel [isInHotelApp]="isInHotelApp"></search-hotel>
-    </div>
-    <div class="config">
-        <div>Become a Host</div>
-        <div>
-            <i class="material-icons">language</i>
+<section class="app-header" [ngClass]="{'fixed': isInHotelApp === true,'expanded':expandHeader}">
+    <div class="main-header-container">
+        <a class="logo clean-link" routerLink="">
+            AIRDND
+        </a>
+        <div class="search">
+            <search-hotel (onExpandHeader)="onExpandHeader()" [isInHotelApp]="isInHotelApp"></search-hotel>
         </div>
-        <div class="user-config-container">
-            <user-config [user]="user"></user-config>
+        <div class="config">
+            <div>Become a Host</div>
+            <div>
+                <i class="material-icons">language</i>
+            </div>
+            <div class="user-config-container">
+                <user-config [user]="user"></user-config>
+            </div>
         </div>
     </div>
+    <div *ngIf="expandHeader" class="search-hotel-expended-container">
+        <search-hotel-expanded></search-hotel-expanded>
+    </div>
+
 
 </section>

@@ -19,6 +19,11 @@ import { ScrollArrowComponent } from './cpms/scroll-arrow/scroll-arrow.component
 import { HotelDetailsComponent } from './pages/hotel-details/hotel-details.component';
 import { HotelDetailsHeaderComponent } from './cpms/hotel-details-header/hotel-details-header.component';
 import { HotelImgPreComponent } from './cpms/hotel-img-pre/hotel-img-pre.component';
+import { SearchHotelExpandedComponent } from './cpms/search-hotel-expanded/search-hotel-expanded.component';
+import { DynamicModalComponent } from './cpms/modal/dynamic-modal/dynamic-modal.component';
+import { DateModalComponent } from './cpms/modal/date-modal/date-modal.component';
+import { LocationModalComponent } from './cpms/modal/location-modal/location-modal.component';
+import { GuestModalComponent } from './cpms/modal/guest-modal/guest-modal.component';
 
 
 @NgModule({
@@ -39,6 +44,11 @@ import { HotelImgPreComponent } from './cpms/hotel-img-pre/hotel-img-pre.compone
     HotelDetailsComponent,
     HotelDetailsHeaderComponent,
     HotelImgPreComponent,
+    SearchHotelExpandedComponent,
+    DynamicModalComponent,
+    DateModalComponent,
+    LocationModalComponent,
+    GuestModalComponent,
   ],
   imports: [
     BrowserModule,

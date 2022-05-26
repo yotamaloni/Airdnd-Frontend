@@ -1,5 +1,6 @@
-<section class="hotel-list">
+<section class="hotel-list" [ngClass]="{'darken':modal.type}">
 
-    <hotel-preview [isInSearch]="isInSearch" *ngFor="let hotel of hotels" [hotel]="hotel"></hotel-preview>
+    <hotel-preview [isInSearch]=" isInSearch" *ngFor="let hotel of hotels" [hotel]="hotel">
+    </hotel-preview>
 
 </section>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'search-hotel',
@@ -8,9 +8,17 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SearchHotelComponent implements OnInit {
 
   @Input() isInHotelApp: boolean
+  @Output() onExpandHeader = new EventEmitter()
+
+  isExpanded: boolean = false
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  expandSearch = (): void => {
+    this.isExpanded = !this.isExpanded
+    this.onExpandHeader.emit()
   }
 
 }
