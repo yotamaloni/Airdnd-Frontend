@@ -1,4 +1,4 @@
 export interface HotelOption {
-    txt: String,
-    icon: String
+    txt: string,
+    icon: string
 }

@@ -6,7 +6,7 @@ import { Component, OnInit, Input, OnDestroy } from '@angular/core';
   styleUrls: ['./app-sub-header.component.scss']
 })
 export class AppSubHeaderComponent implements OnInit, OnDestroy {
-  @Input() windowScrollY: Number
+  @Input() windowScrollY: number
   isWindowScrolled: boolean
 
   constructor() { }

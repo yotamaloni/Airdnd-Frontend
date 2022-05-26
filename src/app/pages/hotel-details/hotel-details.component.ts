@@ -12,7 +12,7 @@ import { mergeMap } from 'rxjs';
 })
 export class HotelDetailsComponent implements OnInit {
   hotel: Hotel
-  test: Number
+  test: number
   subscription: Subscription
   constructor(private hotelService: HotelService, private route: ActivatedRoute, private router: Router) { }
 

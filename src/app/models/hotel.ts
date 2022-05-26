@@ -2,39 +2,39 @@ import { Reservation } from "./reservation"
 import { User } from "./user"
 
 export interface Hotel {
-    _id: String
-    name: String
-    country: String,
-    city: String
+    _id: string
+    name: string
+    country: string,
+    city: string
     host: User
     pos: {
-        lat: Number,
-        lan: Number
+        lat: number,
+        lan: number
     }
-    priceUsDollar: Number
-    rank: Number | String
-    placeType: String
-    propertyType: String
+    priceUsDollar: number
+    rank: number | string
+    placeType: string
+    propertyType: string
     reservations: Reservation[]
     saleDates: {
         checkIn: Date
         checkOut: Date
     }
-    labels: String[]
+    labels: string[]
     facilities: {
-        bathroom: Number
-        bedroom: Number
-        beds: Number
+        bathroom: number
+        bedroom: number
+        beds: number
     }
-    amenities: String[]
-    languages: String[]
-    summary: String
-    licenseNumber: String
+    amenities: string[]
+    languages: string[]
+    summary: string
+    licensenumber: string
     about: {
-        general: String
-        theSpace: String
-        otherThingToNote: String
+        general: string
+        theSpace: string
+        otherThingToNote: string
     }
-    images: String[]
+    images: string[]
 }
 

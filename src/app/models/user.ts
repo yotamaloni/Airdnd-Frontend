@@ -1,8 +1,8 @@
 export interface User {
-    firstName: String
-    lastName: String
-    _id: String
-    country: String
-    imgSrc: String
-    initials: String
+    firstName: string
+    lastName: string
+    _id: string
+    country: string
+    imgSrc: string
+    initials: string
 }

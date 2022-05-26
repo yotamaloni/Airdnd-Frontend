@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class UtilsService {
 
   constructor() { }
-  makeId(length: Number = 6): string {
+  makeId(length: number = 6): string {
     var id = ''
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     for (let i = 0; i < length; i++) {
@@ -14,7 +14,7 @@ export class UtilsService {
     }
     return id
   }
-  getInitials(fullName): String {
+  getInitials(fullName): string {
     let splittedName = fullName.split(' '),
       initials = splittedName[0].substring(0, 1).toUpperCase();
 
@@ -25,7 +25,7 @@ export class UtilsService {
     return initials;
   }
 
-  getRandomImg(): String {
+  getRandomImg(): string {
     return this.IMAGES[Math.floor(Math.random() * this.IMAGES.length)]
   }
 

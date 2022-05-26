@@ -6,7 +6,7 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./scroll-arrow.component.scss']
 })
 export class ScrollArrowComponent implements OnInit {
-  @Input() direction: String
+  @Input() direction: string
   @Input() isDisable: boolean
   @Output() onClickArrow = new EventEmitter<string>()
   constructor() { }

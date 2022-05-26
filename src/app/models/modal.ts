@@ -1,4 +1,4 @@
 export interface Modal {
-    type: String | null
+    type: string | null
   
 }

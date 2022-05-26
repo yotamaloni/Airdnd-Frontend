@@ -13,7 +13,7 @@ export class ModalService {
   public modal$ = this._modal$.asObservable()
 
 
-  onSetModal(typeName: String) {
+  onSetModal(typeName: string) {
     this._modal$.next({ type: typeName })
   }
 }

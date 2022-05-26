@@ -24,6 +24,7 @@ import { DynamicModalComponent } from './cpms/modal/dynamic-modal/dynamic-modal.
 import { DateModalComponent } from './cpms/modal/date-modal/date-modal.component';
 import { LocationModalComponent } from './cpms/modal/location-modal/location-modal.component';
 import { GuestModalComponent } from './cpms/modal/guest-modal/guest-modal.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { GuestModalComponent } from './cpms/modal/guest-modal/guest-modal.compon
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

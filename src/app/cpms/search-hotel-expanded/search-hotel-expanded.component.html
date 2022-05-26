@@ -1,7 +1,7 @@
 <section class="search-hotel-expanded">
     <div (click)="setModal('location')" class="location" [ngClass]="{'active': activeDivName === 'where'}">
         <div class="title">Where</div>
-        <div class="info">Search destination</div>
+        <input [(ngModel)]="filterBy.location" (ngModelChange)="onSetFilterBy()" placeholder="Search destinations">
         <div class="modal-container location" *ngIf="modal.type==='location'">
             <dynamic-modal [modal]="modal"></dynamic-modal>
         </div>

@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { HotelFilter } from 'src/app/models/hotel-filter';
 import { Modal } from 'src/app/models/modal';
+import { HotelService } from 'src/app/service/hotel.service';
 import { ModalService } from 'src/app/service/modal.service';
 
 @Component({
@@ -9,14 +11,19 @@ import { ModalService } from 'src/app/service/modal.service';
   styleUrls: ['./search-hotel-expanded.component.scss']
 })
 export class SearchHotelExpandedComponent implements OnInit, OnDestroy {
-  activeDivName: String = 'date'
+  activeDivName: string = 'date'
   modal: Modal
-  subscription: Subscription
-  constructor(private modalService: ModalService) { }
+  subscriptionModal: Subscription
+  filterBy: HotelFilter = {} as HotelFilter
+  subscriptionFilterBy: Subscription
+  constructor(private modalService: ModalService, private hotelService: HotelService) { }
 
   ngOnInit(): void {
-    this.subscription = this.modalService.modal$.subscribe(data => {
-      this.modal = data
+    this.subscriptionModal = this.modalService.modal$.subscribe(modal => {
+      this.modal = modal
+    })
+    this.subscriptionFilterBy = this.hotelService.hotelFilter$.subscribe(filterBy => {
+      this.filterBy = filterBy
     })
   }
 
@@ -26,6 +33,11 @@ export class SearchHotelExpandedComponent implements OnInit, OnDestroy {
   }
   ngOnDestroy(): void {
     this.modalService.onSetModal(null)
-    this.subscription.unsubscribe()
+    this.subscriptionModal.unsubscribe()
+  }
+
+  onSetFilterBy = (): void => {
+    this.hotelService.setFilterBy({ ...this.filterBy })
+    console.log("🟡 ~ this.filterBy", this.filterBy)
   }
 }

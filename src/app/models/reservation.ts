@@ -1,13 +1,13 @@
 import { User } from "./user"
 export interface Reservation {
-    _id: String
+    _id: string
     checkIn: Date,
     checkOut: Date,
     guest: {
         user: any
-        adults: Number
-        children: Number
-        infant: Number
-        pet: Number
+        adults: number
+        children: number
+        infant: number
+        pet: number
     }
 }

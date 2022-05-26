@@ -49,6 +49,18 @@
                 }
 
             }
+
+            input {
+                background-color: inherit;
+                border: none;
+                font-size: 00.875rem;
+
+                &:focus {
+                    background-color: inherit;
+                    border: none;
+                    outline: none;
+                }
+            }
         }
 
         .date {

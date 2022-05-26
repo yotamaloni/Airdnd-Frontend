@@ -160,7 +160,7 @@ export class DataService {
       ],
       languages: ["english", "german", "french", "hebrew"],
       summary: "",
-      licenseNumber: '00033344488',
+      licensenumber: '00033344488',
       about: {
         general:
           "Mystagoge Retreat is a unique traditional house, which can accommodate up to two people.A private heated indoor cave pool with jacuzzi will be waiting for you to offer a mystic experience.A light breakfast basket with rusks, jam, honey, tea coffee, milk and butter.Amenities included are WI-FI, air-conditioning, in all areas of house, free parking, sun filled traditional yard with sunbeds, dining area and shared BBQ.",
@@ -260,7 +260,7 @@ export class DataService {
       ],
       languages: ["english", "german", "french", "hebrew"],
       summary: "",
-      licenseNumber: '00033344488',
+      licensenumber: '00033344488',
       about: {
         general:
           "Mystagoge Retreat is a unique traditional house, which can accommodate up to two people.A private heated indoor cave pool with jacuzzi will be waiting for you to offer a mystic experience.A light breakfast basket with rusks, jam, honey, tea coffee, milk and butter.Amenities included are WI-FI, air-conditioning, in all areas of house, free parking, sun filled traditional yard with sunbeds, dining area and shared BBQ.",
@@ -360,7 +360,7 @@ export class DataService {
       ],
       languages: ["english", "german", "french", "hebrew"],
       summary: "",
-      licenseNumber: '00033344488',
+      licensenumber: '00033344488',
       about: {
         general:
           "Mystagoge Retreat is a unique traditional house, which can accommodate up to two people.A private heated indoor cave pool with jacuzzi will be waiting for you to offer a mystic experience.A light breakfast basket with rusks, jam, honey, tea coffee, milk and butter.Amenities included are WI-FI, air-conditioning, in all areas of house, free parking, sun filled traditional yard with sunbeds, dining area and shared BBQ.",
@@ -460,7 +460,7 @@ export class DataService {
       ],
       languages: ["english", "german", "french", "hebrew"],
       summary: "",
-      licenseNumber: '00033344488',
+      licensenumber: '00033344488',
       about: {
         general:
           "Mystagoge Retreat is a unique traditional house, which can accommodate up to two people.A private heated indoor cave pool with jacuzzi will be waiting for you to offer a mystic experience.A light breakfast basket with rusks, jam, honey, tea coffee, milk and butter.Amenities included are WI-FI, air-conditioning, in all areas of house, free parking, sun filled traditional yard with sunbeds, dining area and shared BBQ.",
@@ -560,7 +560,7 @@ export class DataService {
       ],
       languages: ["english", "german", "french", "hebrew"],
       summary: "",
-      licenseNumber: '00033344488',
+      licensenumber: '00033344488',
       about: {
         general:
           "Mystagoge Retreat is a unique traditional house, which can accommodate up to two people.A private heated indoor cave pool with jacuzzi will be waiting for you to offer a mystic experience.A light breakfast basket with rusks, jam, honey, tea coffee, milk and butter.Amenities included are WI-FI, air-conditioning, in all areas of house, free parking, sun filled traditional yard with sunbeds, dining area and shared BBQ.",
@@ -660,7 +660,7 @@ export class DataService {
       ],
       languages: ["english", "german", "french", "hebrew"],
       summary: "",
-      licenseNumber: '00033344488',
+      licensenumber: '00033344488',
       about: {
         general:
           "Mystagoge Retreat is a unique traditional house, which can accommodate up to two people.A private heated indoor cave pool with jacuzzi will be waiting for you to offer a mystic experience.A light breakfast basket with rusks, jam, honey, tea coffee, milk and butter.Amenities included are WI-FI, air-conditioning, in all areas of house, free parking, sun filled traditional yard with sunbeds, dining area and shared BBQ.",
@@ -760,7 +760,7 @@ export class DataService {
       ],
       languages: ["english", "german", "french", "hebrew"],
       summary: "",
-      licenseNumber: '00033344488',
+      licensenumber: '00033344488',
       about: {
         general:
           "Mystagoge Retreat is a unique traditional house, which can accommodate up to two people.A private heated indoor cave pool with jacuzzi will be waiting for you to offer a mystic experience.A light breakfast basket with rusks, jam, honey, tea coffee, milk and butter.Amenities included are WI-FI, air-conditioning, in all areas of house, free parking, sun filled traditional yard with sunbeds, dining area and shared BBQ.",
@@ -860,7 +860,7 @@ export class DataService {
       ],
       languages: ["english", "german", "french", "hebrew"],
       summary: "",
-      licenseNumber: '00033344488',
+      licensenumber: '00033344488',
       about: {
         general:
           "Mystagoge Retreat is a unique traditional house, which can accommodate up to two people.A private heated indoor cave pool with jacuzzi will be waiting for you to offer a mystic experience.A light breakfast basket with rusks, jam, honey, tea coffee, milk and butter.Amenities included are WI-FI, air-conditioning, in all areas of house, free parking, sun filled traditional yard with sunbeds, dining area and shared BBQ.",

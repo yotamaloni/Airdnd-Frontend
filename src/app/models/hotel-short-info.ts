@@ -1,9 +1,9 @@
 export interface HotelShortInfo {
-    header: String
-    mainFirst: String
+    header: string
+    mainFirst: string
     mainSecond?: {
         checkIntDate: Date
         checkOutDate: Date
     }
-    price: Number
+    price: number
 }
